@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>SUWARItE</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <script type="text/javascript" src="genzaichi.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAc1yXrABkTohqNwGdfWOjDkM5PozY5Wr8&callback=initMap&libraries=places">
+    </script>
+</head>
+
+<body>
+    <p id="head">
+        <img class="logo" src="suwarite_logo.png" alt="suwarite" >
+    </p>
+    <div id="map"></div>
+    <div class='btn' onclick="initMap()">
+        <p>座る</p>
+    </div>
+    <div class="space"></div>
+    <div class="storeinfo">
+        <table id="storelist">
+            <thead>
+                <tr>
+                    <th>店の名前</th>
+                    <th>距離</th>
+                </tr>
+            </thead>
+            <tbody id="stores">
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <p>copylight soutakobayashi 2019</p>
+    </footer>
+</body>
+
+</html>
